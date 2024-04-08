@@ -9,16 +9,15 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0 0 20px;
+    margin: 20px 10px 0 10px;
     align-items: center;
     position: absolute;
-    font-size: 26px;
+    font-size: 22px;
     z-index: 3;
+    width: 97vw;
 }
 
-i {
-    margin-left: 340%;
-}
+i {}
 
 sup {
     color: rgb(0, 38, 255);
@@ -33,7 +32,7 @@ sup {
     top: 35%;
     left: 16%;
     font-weight: lighter;
-    line-height: 80px;
+    line-height: 60px;
 }
 
 .footed {
@@ -71,8 +70,17 @@ img {
     }
 
     60% {
-        opacity: 0.2;
+        opacity: 0.1;
 
+    }
+
+    70% {
+        opacity: 0.3;
+
+    }
+
+    80% {
+        opacity: 0.4;
     }
 
     100% {
@@ -105,4 +113,77 @@ img:hover {
 
 b {
     font-size: 40px;
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1160px) {
+    .centered {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        font-weight: lighter;
+        line-height: 50px;
+    }
+
+    b {
+        font-size: 32px;
+
+    }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    .centered {
+        position: absolute;
+        top: 35%;
+        left: 9%;
+        font-weight: lighter;
+        line-height: 45px;
+    }
+
+    b {
+        font-size: 28px;
+    }
+
+    .navbar {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: 100vh;
+        border-left: 1px solid rgb(0, 0, 0);
+        border-right: 1px solid rgb(0, 0, 0);
+        position: relative;
+        padding-left: -1px;
+        padding-right: -1px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    b {
+        font-size: 50px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 35%;
+        left: 16%;
+        font-weight: lighter;
+        line-height: 80px;
+    }
+
+
 }
