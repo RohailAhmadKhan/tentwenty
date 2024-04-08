@@ -17,7 +17,6 @@
     width: 97vw;
 }
 
-i {}
 
 sup {
     color: rgb(0, 38, 255);
@@ -116,7 +115,7 @@ b {
 }
 
 
-@media only screen and (min-width: 800px) and (max-width: 1160px) {
+@media only screen and (min-width: 860px) and (max-width: 1160px) {
     .centered {
         position: absolute;
         top: 35%;
@@ -132,7 +131,7 @@ b {
 
 }
 
-@media only screen and (min-width: 700px) and (max-width: 800px) {
+@media only screen and (min-width: 650px) and (max-width: 860px) {
     .centered {
         position: absolute;
         top: 35%;
@@ -151,7 +150,7 @@ b {
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 380px) and (max-width: 650px) {
 
     .container {
         flex-direction: column;
@@ -183,6 +182,48 @@ b {
         left: 16%;
         font-weight: lighter;
         line-height: 80px;
+    }
+
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: 100vh;
+        border-left: 1px solid rgb(0, 0, 0);
+        border-right: 1px solid rgb(0, 0, 0);
+        position: relative;
+        padding-left: -1px;
+        padding-right: -1px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    b {
+        font-size: 30px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 45%;
+        left: 16%;
+        font-weight: lighter;
+        line-height: 60px;
+    }
+
+    .navbar {
+        font-size: 16px;
+        width: 90vw;
     }
 
 
